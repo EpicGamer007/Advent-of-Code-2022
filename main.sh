@@ -1,3 +1,5 @@
-#!/bin/bash
+#!/bin/env bash
 
-echo hi
+read -p "Enter day to run: " day
+clear
+node ./aoc2022/day$day

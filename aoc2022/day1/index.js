@@ -1,5 +1,7 @@
 const fs = require("fs");
-fs.readFile("./input", "utf8", (err, data) => {
+const { join } = require("path");
+
+fs.readFile(join(__dirname, "input"), "utf8", (err, data) => {
 	if(err) {
 		return console.log(err);
 	}
